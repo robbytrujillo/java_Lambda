@@ -1,3 +1,3 @@
 #Belajar JAVA LAMBDA
 
-<h2>Java Lamda</h2>
+<h2>Java Lambda</h2>
