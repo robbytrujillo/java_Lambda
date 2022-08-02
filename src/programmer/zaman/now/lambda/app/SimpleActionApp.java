@@ -8,19 +8,19 @@ public class SimpleActionApp {
         //versi Anonimus Class
         SimpleAction simpleAction1 = new SimpleAction() {
             @Override
-            public String action() {
+            public String action(String name) {
                 return "Robby";
             }
         };
 
-        System.out.println(simpleAction1.action());
+        System.out.println(simpleAction1.action("Robby"));
 
         //versi sederhana Java Lambda
-        SimpleAction simpleAction2 = () -> {
+        SimpleAction simpleAction2 = (String name) -> {
             return "Robby";
         };
 
-        System.out.println(simpleAction2.action());
+        System.out.println(simpleAction2.action("Robby"));
 
     }
 }
