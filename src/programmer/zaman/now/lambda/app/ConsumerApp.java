@@ -7,7 +7,11 @@ public class ConsumerApp {
 
         Consumer<String> consumer = new Consumer<String>() {
 
-        }
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
 
     }
 }
