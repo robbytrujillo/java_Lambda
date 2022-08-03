@@ -8,10 +8,10 @@ public class ConsumerApp {
         Consumer<String> consumer = new Consumer<String>() {
 
             @Override
-            public void accept(String s) {
-                System.out.println(s);
+            public void accept(String value) {
+                System.out.println(value);
             }
         };
-
+        consumer.accept("Robby Ilhamkusuma");
     }
 }
