@@ -13,4 +13,9 @@ public class LazyApp {
             System.out.println("Coba Lagi Tahun Depan");
         }
     }
+
+    public static String getName(){
+        System.out.println("Method getName dipanggil");
+        return "Robby";
+    }
 }
