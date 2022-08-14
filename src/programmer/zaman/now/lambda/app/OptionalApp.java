@@ -18,12 +18,18 @@ public class OptionalApp {
 
     public static void sayHello(String name) {
 
-        Optional.ofNullable(name)
+//        Optional.ofNullable(name)
+//                .map(String::toUpperCase)
+//                //.ifPresent(value -> System.out.println("Hello " + value));
+//                .ifPresentOrElse(
+//                        value -> System.out.println("Hello " + value),
+//                        () -> System.out.println("HELLO"));
+
+        String upperName = Optional.ofNullable(name)
                 .map(String::toUpperCase)
-                //.ifPresent(value -> System.out.println("Hello " + value));
-                .ifPresentOrElse(
-                        value -> System.out.println("Hello " + value),
-                        () -> System.out.println("HELLO"));
+                .orElse("TEMAN");
+
+        System.out.println("Hello " + upperName);
 
 //        Optional<String> optionalName = Optional.ofNullable(name);
 //
