@@ -11,8 +11,8 @@ public class OptionalApp {
     sayHello("Robby");
 
 //    Bakal error
-//    String name = null;
-//    sayHello(name);
+    String name = null;
+    sayHello(name);
 
     }
 
@@ -20,7 +20,10 @@ public class OptionalApp {
 
         Optional.ofNullable(name)
                 .map(String::toUpperCase)
-                .ifPresent(System.out::println);
+                //.ifPresent(value -> System.out.println("Hello " + value));
+                .ifPresentOrElse(
+                        value -> System.out.println("Hello " + value),
+                        () -> System.out.println("HELLO"));
 
 //        Optional<String> optionalName = Optional.ofNullable(name);
 //
