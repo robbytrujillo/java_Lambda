@@ -10,7 +10,7 @@ public class OptionalApp {
 
     sayHello("Robby");
 
-//    Bakal error
+//    Bisa Bakal error
     String name = null;
     sayHello(name);
 
